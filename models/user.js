@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const dateFormat = require('../middleware/helpers');
 
 const UserSchema = new mongoose.Schema({
     name:{
@@ -23,9 +24,18 @@ const UserSchema = new mongoose.Schema({
         required: [true, 'Please provide a password'],
         minlength: 6
     },
-    supervisor_email:{
-        type:String,
-    }
+    // supervisor_email:{
+    //     type:String,
+    // }
+    createdAt: {
+        type: Date,
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp),
+      },
+      experience: {
+        type: Number,
+        default: 0,
+      },
 })
 
 UserSchema.pre('save', async function () {
@@ -43,8 +53,8 @@ UserSchema.methods.createJWT = function () {
       )
 }
 
-UserSchema.methods.comparePassword = async function (canditatePassword) {
-    const isMatch = await bcrypt.compare(canditatePassword, this.password)
+UserSchema.methods.comparePassword = async function (candidatePassword) {
+    const isMatch = await bcrypt.compare(candidatePassword, this.password)
     return isMatch
 }
 
