@@ -6,7 +6,8 @@ const app = express();
 const connectDB = require('./db/connect');
 
 //routers
-const authRouter = require('./routes/auth');
+const authRouter = require('./routes/authRoutes');
+const userRouter = require('./routes/userRoutes');
 
 app.use(express.json());
 
@@ -17,6 +18,8 @@ app.get('/api/v1', (req, res) => {
 
 //routes
 app.use('/api/v1', authRouter);
+app.use('/api/v1/user',userRouter);
+
 
 const port = process.env.PORT || 5000;
 
