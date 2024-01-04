@@ -23,7 +23,7 @@ const message = () => {
                         <p className="mb-4 text-sm font-semibold uppercase text-red-500 md:text-base pt-6">Click below to Signup/Login</p>
 
                         {/* <p className="mb-12 max-w-screen-md text-center text-gray-500 md:text-lg">The page you’re looking for doesn’t exist.</p> */}
-                        <a href="/login" className="inline-block rounded-lg bg-red-400 px-20 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base ">Sign Up</a>
+                        <a href="/signup" className="inline-block rounded-lg bg-red-400 px-20 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base ">Sign Up</a>
                         <a href="/login" className="inline-block rounded-lg bg-red-400 px-24 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base mt-4">Login</a>
                     </div>
                 </div>
