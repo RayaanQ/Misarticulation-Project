@@ -1,32 +1,60 @@
 export const quiz = {
-    totalQuestions: 5, // Adjust the total number of questions accordingly
-    questions: [
+  questions: [
       {
-        id: 1,
-        question: 'Speak the name of a fruit that is orange in color.',
-        correctAnswer: 'orange',
+          id: 1,
+          question: 'इस वाक्य को सही तरीके से उच्चारित करें: "मैं बहुत खुश हूँ।"',
+          pronunciation: 'Is vaaky ko sahi tareeke se uchcharit karein: "Main bahut khush hoon."',
+          correctAnswer: 'मैं बहुत खुश हूं'
       },
+
       {
-        id: 2,
-        question: 'Speak the capital city of France.',
-        correctAnswer: 'Paris',
+          id: 2,
+          question: 'नीचे दिए गए शब्द को सही तरीके से उच्चारित करें: "विद्यालय"',
+          pronunciation: 'Niche diye gaye shabd ko sahi tareeke se uchcharit karein: "Vidyalay"',
+          correctAnswer: 'विद्यालय'
       },
+
       {
-        id: 3,
-        question: 'Say the name of a country that starts with the letter "A".',
-        correctAnswer: 'Australia',
+          id: 3,
+          question: 'नीचे दिए गए शब्द को सही तरीके से उच्चारित करें: "समय"',
+          pronunciation: 'Niche diye gaye shabd ko sahi tareeke se uchcharit karein: "Samay"',
+          correctAnswer: 'समय'
       },
+
       {
-        id: 4,
-        question: 'Speak the name of a famous scientist.',
-        correctAnswer: 'Albert Einstein',
+          id: 4,
+          question: 'इस वाक्य को सही तरीके से उच्चारित करें: "मैंने किताब पढ़ी है।"',
+          pronunciation: 'Is vaaky ko sahi tareeke se uchcharit karein: "Maine kitaab padhi hai."',
+          correctAnswer: 'मैने किताब पढ़ी है'
       },
+
       {
-        id: 5,
-        question: 'Say the title of your favorite book.',
-        correctAnswer: 'The Great Gatsby',
+          id: 5,
+          question: 'नीचे दिए गए शब्द को सही तरीके से उच्चारित करें: "खुशी"',
+          pronunciation: 'Niche diye gaye shabd ko sahi tareeke se uchcharit karein: "Khushi"',
+          correctAnswer: 'खुशी'
       },
-      // Add more questions as needed
-    ],
-  };
+
+      {
+          id: 6,
+          question: 'इस वाक्य को सही तरीके से उच्चारित करें: "बच्चे खेल रहे हैं।"',
+          pronunciation: 'Is vaaky ko sahi tareeke se uchcharit karein: "Bacche khel rahe hain."',
+          correctAnswer: 'बच्चे खेल रहे हैं'
+      },
+
+      {
+          id: 7,
+          question: 'नीचे दिए गए शब्द को सही तरीके से उच्चारित करें: "उत्तराधिकारी"',
+          pronunciation: 'Niche diye gaye shabd ko sahi tareeke se uchcharit karein: "Uttaradhikaari"',
+          correctAnswer: 'उत्तराधिकारी'
+      },
+
+      {
+          id: 8,
+          question: 'इस वाक्य को सही तरीके से उच्चारित करें: "हम बहुत खुश हैं।"',
+          pronunciation: 'Is vaaky ko sahi tareeke se uchcharit karein: "Hum bahut khush hain."',
+          correctAnswer: 'हम बहुत खुश हैं'
+      },
+  ],
+}
   

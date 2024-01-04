@@ -5,7 +5,7 @@ import Footer from '@/app/components/Footer'
 const message = () => {
     return (
         <>
-        <Navbar/>
+            <Navbar />
             <div className="bg-white pt-14 ml-80">
                 <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                     <div className="flex flex-col items-center">
@@ -23,12 +23,19 @@ const message = () => {
                         <p className="mb-4 text-sm font-semibold uppercase text-red-500 md:text-base pt-6">Click below to Signup/Login</p>
 
                         {/* <p className="mb-12 max-w-screen-md text-center text-gray-500 md:text-lg">The page you’re looking for doesn’t exist.</p> */}
-                        <a href="/login" className="inline-block rounded-lg bg-red-400 px-20 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base ">Sign Up</a>
-                        <a href="/login" className="inline-block rounded-lg bg-red-400 px-24 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base mt-4">Login</a>
+                        <div className="flex gap-5">
+                            <a href="/signup" className="inline-block rounded-lg bg-red-400 px-16 py-4 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base">
+                                Sign Up
+                            </a>
+                            <a href="/login" className="inline-block rounded-lg bg-red-400 px-16 py-4 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-500 focus-visible:ring active:text-white md:text-base">
+                                Login
+                            </a>
+                        </div>
                     </div>
+
                 </div>
             </div>
-        <Footer/>
+            <Footer />
         </>
     )
 }

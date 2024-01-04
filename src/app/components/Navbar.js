@@ -85,8 +85,8 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a href="/user/startquiz" className="flex items-center p-3 font-bold text-xl text-black-900 rounded-lg dark:text-black hover:bg-red-100 dark:hover:bg-red-500 group">
-                            <svg aria-hidden="true" className="w-7 h-7 text-red-500 transition duration-75 dark:text-red-500 group-hover:text-white-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M3 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2zm1 3h10v2H4V5zm0 4h10v2H4V9zm0 4h10v2H4v-2zm13-9h-2a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-1 10h-1V6h1v8zM15 2h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"></path>
+                            <svg aria-hidden="true" className="w-7 h-7 text-red-500 transition duration-75 dark:red-blue-500 group-hover:text-white-900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2 2a1 1 0 0 1 2 0v14a1 1 0 0 1-2 0V2zm4 2a1 1 0 0 1 2 0v10a1 1 0 0 1-2 0V4zm4-2a1 1 0 0 1 2 0v12a1 1 0 0 1-2 0V2zm4 4a1 1 0 0 1 2 0v8a1 1 0 0 1-2 0V6z"></path>
                             </svg>
 
                             <span className="ml-5">Quiz</span>

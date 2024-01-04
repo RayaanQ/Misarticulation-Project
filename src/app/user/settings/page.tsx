@@ -47,7 +47,7 @@ const settings = () => {
                 <span className="title-font font-medium">Change the password</span>
               </div>
             </div>
-            {/* <div className="p-2 sm:w-1/2 w-full">
+            <div className="p-2 sm:w-1/2 w-full">
               <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                 <Link href={"/user/settings/profile_picture"}>
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" className="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@ const settings = () => {
                 </Link>
                 <span className="title-font font-medium">Change Profile Picture</span>
               </div>
-            </div> */}
+            </div>
           </div>
           <Link href={"/profile"}>
             <button className="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 font-bold focus:outline-none hover:bg-red-600 rounded text-lg">Go to Profile</button></Link>
