@@ -2,14 +2,17 @@ import React from 'react'
 import wordsData from '../data/words/wordsData';
 
 const WordsChart = () => {
-  const speechSynthesis = window.speechSynthesis;
-  let audio = (textToSpeak)=>{
-    if (textToSpeak) {
+  const isBrowser = typeof window !== 'undefined';
+
+  const speechSynthesis = isBrowser ? window.speechSynthesis : null;
+
+  let audio = (textToSpeak) => {
+    if (speechSynthesis && textToSpeak) {
       const utterance = new SpeechSynthesisUtterance(textToSpeak);
       utterance.lang = "hi-IN";
       console.log(utterance);
       speechSynthesis.speak(utterance);
-  }
+    }
   }
 
   return (

@@ -1,10 +1,13 @@
 'use client';
 import React, { useState } from 'react';
-import { quiz } from '../../data/quiz/quizdata';
+import { quiz } from '../../../data/quiz/listenquizdata';
 import styles from './styles.css'
 import Link from 'next/link';
+import { MdVolumeUp } from 'react-icons/md';
 
 const page = () => {
+  const [selectedAnswerForPronunciation, setSelectedAnswerForPronunciation] = useState(null);
+  const [pronouncingAnswer, setPronouncingAnswer] = useState(null);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [checked, setChecked] = useState(false);
@@ -17,22 +20,30 @@ const page = () => {
   });
   const [answerSelectedForCurrentQuestion, setAnswerSelectedForCurrentQuestion] = useState(false);
 
+
   const { questions } = quiz;
   const { question, answers, correctAnswer } = questions[activeQuestion];
 
-  const [pronouncedAnswers, setPronouncedAnswers] = useState([]);
+  // const [pronouncedAnswers, setPronouncedAnswers] = useState([]);
 
-  const onAnswerHover = (answer) => {
-    if (!pronouncedAnswers.includes(answer)) {
-      pronounceText(answer);
-      setPronouncedAnswers((prev) => [...prev, answer]);
-    }
+
+  const pronounceAnswer = (answer) => {
+    pronounceText(answer);
+    setSelectedAnswerForPronunciation(answer);
   };
+
+  // const onAnswerHover = (answer) => {
+  //   if (!pronouncedAnswers.includes(answer)) {
+  //     pronounceText(answer);
+  //     setPronouncedAnswers((prev) => [...prev, answer]);
+  //   }
+  // };
 
   const onAnswerSelected = (answer, idx) => {
     if (!answerSelectedForCurrentQuestion) {
       setChecked(true);
       setSelectedAnswerIndex(idx);
+      setSelectedAnswerForPronunciation(null); // Deselect the answer for pronunciation
       if (answer === correctAnswer) {
         setSelectedAnswer(true);
         pronounceText(answer);
@@ -43,6 +54,9 @@ const page = () => {
         console.log('false');
       }
       setAnswerSelectedForCurrentQuestion(true);
+    } else {
+      // Handle if the answer is already selected
+      // You can add a visual or audible cue to indicate that the answer is already selected
     }
   };
 
@@ -112,13 +126,24 @@ const page = () => {
                 {answers.map((answer, idx) => (
                   <li
                     key={idx}
-                    onMouseEnter={() => onAnswerHover(answer)}
+                    // onMouseEnter={() => onAnswerHover(answer)}
                     onClick={() => onAnswerSelected(answer, idx)}
                     className={
                       selectedAnswerIndex === idx ? 'li-selected' : 'li-hover'
                     }
                   >
-                    <span>{answer}</span>
+                    {/* Add the speaker icon and handle pronunciation */}
+                    <span className="inline-flex grid-cols-3">
+                      <span className='pl-96 pt-1.35 '>{' '}</span>
+                      <MdVolumeUp
+                        className={`speaker-icon h-6 w-6 ${selectedAnswerForPronunciation === answer ? 'active' : ''}`}
+                        onClick={(e) => {
+                          e.stopPropagation(); // Stop the event from reaching the answer click handler
+                          pronounceAnswer(answer);
+                        }}
+                      />
+                      <span className='pl-4 pt-1.35'>{' '}</span>
+                    </span>
                   </li>
                 ))}
                 {checked ? (
