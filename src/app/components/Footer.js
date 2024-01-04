@@ -12,9 +12,9 @@ const Footer = () => {
                             <a href="/user/characters" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Characters</a>
                             {/* <a href="/user/dashboard" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Dashboard</a> */}
                             <a href="/user/leaderboard" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Leaderboard</a>
-                            <a href="/user/profile" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Profile</a>
+                            <a href="/profile" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Profile</a>
                             <a href="/user/settings" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Settings</a>
-                            <a href="/user/message" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Messages</a>
+                            {/* <a href="/user/message" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">Messages</a> */}
                             {/* <a href="#" className="text-gray-500 transition duration-100 hover:text-red-500 active:text-red-600">About</a> */}
                         </nav>
                         {/* nav - end */}
@@ -48,7 +48,7 @@ const Footer = () => {
                         {/* social - end */}
                     </div>
 
-                    <div className="py-8 text-center text-sm text-gray-400">© 2021 - Present LingoLeap. All rights reserved.</div>
+                    <div className="py-8 text-center text-sm text-gray-400">© 2023 - Present LingoLeap. All rights reserved.</div>
                 </footer>
             </div>
         </div>

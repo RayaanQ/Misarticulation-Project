@@ -93,7 +93,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <Link href={"/user/profile"}>
+                        <Link href={"/profile"}>
                             <button type="button" className="flex items-center p-3 w-full text-xl font-bold text-red-900 rounded-lg transition duration-75 group hover:bg-red-100 dark:text-black dark:hover:bg-red-500" aria-controls="dropdown-pages" data-collapse-toggle="dropdown-pages">
                                 <svg aria-hidden="true" className="flex-shrink-0 w-7 h-7 text-red-500 transition duration-75 group-hover:text-red-900 dark:text-red-500 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path></svg>
                                 <span className="flex-1 ml-5 text-left whitespace-nowrap">Profile</span>
@@ -114,16 +114,16 @@ const Navbar = () => {
                             </button>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="/user/message" className="flex items-center p-3 text-xl font-bold text-red-900 rounded-lg dark:text-black hover:bg-red-100 dark:hover:bg-red-500 group">
                             <svg aria-hidden="true" className="flex-shrink-0 w-7 h-7 text-red-500 transition duration-75 dark:text-red-500 group-hover:text-red
                             -900 dark:group-hover:text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.707 7.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l2-2a1 1 0 00-1.414-1.414L11 7.586V3a1 1 0 10-2 0v4.586l-.293-.293z"></path><path d="M3 5a2 2 0 012-2h1a1 1 0 010 2H5v7h2l1 2h4l1-2h2V5h-1a1 1 0 110-2h1a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V5z"></path></svg>
                             <span className="flex-1 ml-5 whitespace-nowrap">Messages</span>
-                            {/* <span className="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">
+                            <span className="inline-flex justify-center items-center w-5 h-5 text-xs font-semibold rounded-full text-primary-800 bg-primary-100 dark:bg-primary-200 dark:text-primary-800">
                                 6
-                            </span> */}
+                            </span>
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </aside>

@@ -17,7 +17,7 @@ const Hero = () => {
                             <div class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
                                 <a href="/" class="inline-block rounded-lg bg-red-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-600 focus-visible:ring active:bg-red-700 md:text-base">Start now</a>
 
-                                <a href="/user/profile" class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-red-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">See profile</a>
+                                <a href="/profile" class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-red-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">See profile</a>
                             </div>
                         </div>
                         {/* content - end */}

@@ -1,9 +1,26 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import Navbar from '@/app/components/Navbar'
 import Footer from '@/app/components/Footer'
+import {useRouter} from "next/navigation"
 import Link from 'next/link'
+import axios from 'axios'
 
-const profile = () => {
+
+export default function ProfilePage(){
+    const router = useRouter();
+    const [data, setData] = useState("nothing")
+    const logout = async () => {
+        try {
+            await axios.get('/api/users/logout')
+            router.push('/')
+
+        } catch (error : any) {
+            console.log(error.message);
+            
+        }
+
+    }
     return (
         <div>
             <Navbar />
@@ -32,7 +49,12 @@ const profile = () => {
                             <div className="flex flex-col items-center justify-center rounded-lg bg-gray-100 p-4 md:p-8">
                                 <div className="text-xl font-bold text-red-500 sm:text-2xl md:text-2xl">215 XP</div>
                                 <div className="text-sm font-semibold sm:text-base">Points</div>
+                                <button
+            className="bg-pink-500 mt-4 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
+            onClick={logout}
+            >Logout</button>
                             </div>
+                            
 
                             {/* stat - start */}
                             {/* <div className="flex flex-col items-center justify-center rounded-lg bg-gray-100 p-4 md:p-8">
@@ -50,7 +72,8 @@ const profile = () => {
                         </div>
                     </div>
                 </div>
-
+                
+          
             </section>
             
             <Footer />
@@ -58,4 +81,4 @@ const profile = () => {
     )
 }
 
-export default profile
+
