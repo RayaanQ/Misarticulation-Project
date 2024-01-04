@@ -10,14 +10,22 @@ const Hero = () => {
                     <section className="mb-8 flex flex-col justify-between gap-6 sm:gap-10 md:mb-16 md:gap-16 lg:flex-row">
                         {/* content - start */}
                         <div class="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12">
-                            <p class="mb-4 font-semibold text-red-500 md:mb-6 md:text-lg xl:text-xl">Very proud to introduce</p>
+                        
+                            <p class=" font-semibold text-red-500 text-3xl ml-8 mb-4">Welcome to</p>
+                           
+                            <a href="/" className="mb-8 inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl" aria-label="logo">
+                            <svg width="95" height="94" viewBox="0 0 95 94" className="h-auto w-10 text-red-500" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M96 0V47L48 94H0V47L48 0H96Z" />
+                            </svg>
 
-                            <h1 class="mb-8 text-3xl font-bold text-black sm:text-4xl md:mb-12 md:text-5xl">Revolutionary way to learn any language</h1>
-
+                            <h1 className="text-8xl">  LingoLeap </h1>
+                        </a> 
+                            
+                               
                             <div class="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-                                <a href="/" class="inline-block rounded-lg bg-red-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-600 focus-visible:ring active:bg-red-700 md:text-base">Start now</a>
+                                <a href="/signup" class="inline-block rounded-lg bg-red-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-600 focus-visible:ring active:bg-red-700 md:text-base mt-4">Start now</a>
 
-                                <a href="/profile" class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-red-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">See profile</a>
+                                <a href="/profile" class="inline-block rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-red-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base mt-4">See profile</a>
                             </div>
                         </div>
                         {/* content - end */}

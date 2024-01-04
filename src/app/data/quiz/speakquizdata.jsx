@@ -56,9 +56,4 @@ export const quiz = {
           correctAnswer: 'हम बहुत खुश हैं'
       },
   ],
-<<<<<<< HEAD
 }
-  
-=======
-}
->>>>>>> 75711e9091130dfda3d9c13b32cdf094c9586ffa
