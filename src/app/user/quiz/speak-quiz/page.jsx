@@ -170,5 +170,3 @@ const SpeakQuizPage = () => {
 };
 
 export default SpeakQuizPage;
-
-
